@@ -5,11 +5,11 @@ require 'bamboohr/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "bamboohr"
-  spec.version       = Bamboohr::VERSION
+  spec.version       = BambooHR::VERSION
   spec.authors       = ["David Padilla"]
   spec.email         = ["david@crowdint.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Consume BambooHR's API}
+  spec.description   = %q{Consume BambooHR's API}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +18,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "httparty", "~> 0.13.0"
+
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "cucumber", "~> 1.3.12"
+  spec.add_development_dependency "vcr", "~> 2.8.0"
+  spec.add_development_dependency "webmock"
 end
