@@ -1,5 +1,6 @@
 require "bamboohr/version"
 
-module Bamboohr
-  # Your code goes here...
+require "bamboohr/client"
+
+module BambooHR
 end

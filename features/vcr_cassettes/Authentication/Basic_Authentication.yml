@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://API_TOKEN:x@api.bamboohr.com/api/gateway.php/crowdint/v1/employees/directory
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 Mar 2014 22:06:47 GMT
+      Server:
+      - Apache
+      Vary:
+      - User-Agent
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"fields":[{"id":"displayName","type":"text","name":"Display name"},{"id":"firstName","type":"text","name":"First
+        name"},{"id":"lastName","type":"text","name":"Last name"},{"id":"jobTitle","type":"list","name":"Job
+        title"},{"id":"workPhone","type":"text","name":"Work Phone"},{"id":"workPhoneExtension","type":"text","name":"Work
+        Extension"},{"id":"mobilePhone","type":"text","name":"Mobile Phone"},{"id":"workEmail","type":"email","name":"Work
+        Email"},{"id":"department","type":"list","name":"Department"},{"id":"location","type":"list","name":"Location"},{"id":"division","type":"list","name":"Division"},{"id":"photoUploaded","type":"bool","name":"Employee
+        photo exists"},{"id":"photoUrl","type":"url","name":"Employee photo url"},{"type":"bool","name":"","id":"canUploadPhoto"}],"employees":[{"id":"1","displayName":"Cyan
+        Aguirre","firstName":"Cyan","lastName":"Mendoza","jobTitle":"Intern","workPhone":null,"workPhoneExtension":null,"mobilePhone":"312-134-7689","workEmail":"cyan@crowd.com","department":"Development","location":"Colima","division":null,"photoUploaded":false,"photoUrl":"https:\/\/crowdint.bamboohr.com\/images\/photo_placeholder.gif","canUploadPhoto":1}
+        ]}'
+    http_version:
+  recorded_at: Tue, 18 Mar 2014 22:06:48 GMT
+recorded_with: VCR 2.8.0
