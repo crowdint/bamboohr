@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "rr", "~> 1.1.2"
   spec.add_development_dependency "cucumber", "~> 1.3.12"
   spec.add_development_dependency "vcr", "~> 2.8.0"
   spec.add_development_dependency "webmock"
